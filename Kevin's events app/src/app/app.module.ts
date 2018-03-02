@@ -5,16 +5,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { welcome} from '../pages/welcome/welcome';
-import { signup } from '../pages/signup/signup';
-import { login } from '../pages/login/login';
+import { WelcomePage} from '../pages/welcome/welcome';
+import { SignupPage } from '../pages/signup/signup';
+import { LoginPage } from '../pages/login/login';
 
 @NgModule({
   declarations: [
     MyApp,
-    welcome,
-    signup,
-    login
+    WelcomePage,
+    SignupPage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -23,9 +23,9 @@ import { login } from '../pages/login/login';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    welcome,
-    signup,
-    login
+    WelcomePage,
+    SignupPage,
+    LoginPage
   ],
   providers: [
     StatusBar,
